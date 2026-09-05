@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="pprof.css" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!--  DESKTOP SIDEBAR   -->
+
+    <aside class="sidebar">
+      <div class="logo">
+        <h3>MY PORTFOLIO</h3>
+        <small>Personal Website</small>
+      </div>
+
+      <nav class="nav flex-column">
+        <a class="nav-link active" href="#home">
+          <i class="bi bi-house-fill"></i>
+          Home
+        </a>
+
+        <a class="nav-link" href="#about">
+          <i class="bi bi-person-fill"></i>
+          About Me
+        </a>
+
+        <a class="nav-link" href="#gallery">
+          <i class="bi bi-images"></i>
+          Gallery
+        </a>
+
+        <a class="nav-link" href="#mission">
+          <i class="bi bi-bullseye"></i>
+          Mission / Vision
+        </a>
+
+        <a class="nav-link" href="#contact">
+          <i class="bi bi-envelope-fill"></i>
+          Contact
+        </a>
+      </nav>
+    </aside>
+
+    <!--  MOBILE NAVBAR   -->
+
+    <nav class="navbar navbar-dark bg-primary mobile-navbar sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#home"> MY PORTFOLIO </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mobileMenu">
+          <ul class="navbar-nav mt-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">
+                <i class="bi bi-house-fill"></i> Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                <i class="bi bi-person-fill"></i> About Me
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">
+                <i class="bi bi-images"></i> Gallery
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#mission">
+                <i class="bi bi-bullseye"></i> Mission / Vision
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <i class="bi bi-envelope-fill"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--  MAIN CONTENT  -->
+
+    <main class="main-content">
+      <!--  HOME  -->
+
+      <section id="home">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <span class="badge bg-primary mb-3">
+                Welcome to My Portfolio
+              </span>
+
+              <h1 class="hero-title">
+                Hello, I'm <span class="text-primary">Daron Layog</span>
+              </h1>
+
+              <p class="hero-subtitle mt-3">
+                Welcome to my personal portfolio website. Here you can learn
+                more about me, my skills, interests, goals, and experiences.
+              </p>
+
+              <!-- Bootstrap Alert -->
+              <div class="alert alert-primary mt-4" role="alert">
+                <i class="bi bi-info-circle-fill"></i>
+                Thank you for visiting my portfolio!
+              </div>
+
+              <div class="mt-4">
+                <a href="#about" class="btn btn-primary btn-lg me-2">
+                  Learn More
+                </a>
+
+                <a href="#contact" class="btn btn-outline-primary btn-lg">
+                  Contact Me
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-5 text-center">
+              <div class="profile-circle">
+                <img
+                  src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.15752-9/791659742_1078122361260056_3228707823487315974_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHZ6cEdF38qpxKNRP8aAmX1lX4GJ7ia6ReVfgYnuJrpFx2HwPM3qtITYPKZYpDpXoHlak9j0kCr1-VKfnLWUD_l&_nc_ohc=8QkzLNhYWCcQ7kNvwFYi-Or&_nc_oc=Adq8RWfVUi_swPafuuYl-nSGY4hEaAjyBIuoOBlk_AIkXBykl4x3NPNmmFShYe2n2yVfkVmLvWuduwItBYRaRMgr&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_ss=7b2a8&oh=03_Q7cD6QE7p90-Xs0lO2y_NcVJxK3bEALR_N1IwRVAG59gqUUVjA&oe=6AC2FA3B"
+                  alt="My Profile Picture"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  ABOUT ME  -->
+
+      <section id="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+
+          <p class="section-description">
+            Get to know me, my background, skills, and interests.
+          </p>
+
+          <div class="row g-4">
+            <!-- Personal Information Card -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card info-card">
+                <div class="card-header">
+                  <i class="bi bi-person"></i>
+                  Personal Information
+                </div>
+
+                <div class="card-body">
+                  <p>
+                    <strong>Name:</strong><br />
+                    Daron Layog
+                  </p>
+
+                  <p>
+                    <strong>Age:</strong><br />
+                    20 Years Old
+                  </p>
+
+                  <p>
+                    <strong>Location:</strong><br />
+                    Philippines
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education Card -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card info-card">
+                <div class="card-header">
+                  <i class="bi bi-mortarboard-fill"></i>
+                  Education
+                </div>
+
+                <div class="card-body">
+                  <p>
+                    <strong>College:</strong><br />
+                    Pamantasan ng Cabuyao
+                  </p>
+
+                  <p>
+                    <strong>Course:</strong><br />
+                    Bachelor of Science in Information Technology
+                  </p>
+
+                  <p>
+                    <strong>Year:</strong><br />
+                    2026
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skills Card -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card info-card">
+                <div class="card-header">
+                  <i class="bi bi-code-slash"></i>
+                  Skills
+                </div>
+
+                <div class="card-body">
+                  <span class="badge bg-primary m-1">HTML</span>
+                  <span class="badge bg-success m-1">CSS</span>
+                  <span class="badge bg-warning text-dark m-1">JavaScript</span>
+                  <span class="badge bg-info text-dark m-1">Bootstrap</span>
+                  <span class="badge bg-dark m-1">GitHub</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interests Card -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card info-card">
+                <div class="card-header">
+                  <i class="bi bi-heart-fill"></i>
+                  Interests
+                </div>
+
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <i class="bi bi-laptop"></i>
+                      Web Development
+                    </li>
+
+                    <li class="list-group-item">
+                      <i class="bi bi-moon-stars-fill"></i>
+                      Sleeping
+                    </li>
+
+                    <li class="list-group-item">
+                      <i class="bi bi-controller"></i>
+                      Gaming
+                    </li>
+
+                    <li class="list-group-item">
+                      <i class="bi bi-music-note"></i>
+                      Music
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY  -->
+
+      <section id="gallery">
+        <div class="container">
+          <h2 class="section-title">My Gallery</h2>
+
+          <p class="section-description">
+            Some of my favorite photos and memories.
+          </p>
+
+          <!-- Bootstrap Carousel -->
+          <div
+            id="portfolioCarousel"
+            class="carousel slide gallery-card"
+            data-bs-ride="carousel"
+          >
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#portfolioCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+              ></button>
+
+              <button
+                type="button"
+                data-bs-target="#portfolioCarousel"
+                data-bs-slide-to="1"
+              ></button>
+
+              <button
+                type="button"
+                data-bs-target="#portfolioCarousel"
+                data-bs-slide-to="2"
+              ></button>
+
+              <button
+                type="button"
+                data-bs-target="#portfolioCarousel"
+                data-bs-slide-to="3"
+              ></button>
+
+              <button
+                type="button"
+                data-bs-target="#portfolioCarousel"
+                data-bs-slide-to="4"
+              ></button>
+
+              <button
+                type="button"
+                data-bs-target="#portfolioCarousel"
+                data-bs-slide-to="5"
+              ></button>
+            </div>
+
+            <!-- Carousel Images -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://scontent.fcgy1-3.fna.fbcdn.net/v/t1.15752-9/795027080_1792042435323955_1957303963674235152_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeELYlTfcNuh_oDwXn9-iB5w9asixPQk7F31qyLE9CTsXWmfPz51Q6ScF-joJnZyRgmuSRtO0-gbmyo32BLeA7pv&_nc_ohc=-yt3QS4UMS0Q7kNvwHK72Gl&_nc_oc=AdoNmNtzoKTBq7wicidd15F-5oI9wGpUYkL2J_SoOEfw1dl6FT68fJI0khdb40eJ4a5E3_0Asze9LYMyLOrbSV0j&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_ss=7b2a8&oh=03_Q7cD6QFDFZhr_hAGnFdwyh1x_EYZcS0Nu-xzs-N6jzlV1Hi-NA&oe=6AC2FBCD"
+                  class="d-block w-100"
+                  alt="Gallery Image 1"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.15752-9/795000610_1620001493085802_8905661658920684972_n.png?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHSPGGS8o-_Tihx7W2nt15t1ZDonOh8kHbVkOic6HyQdquyLmF6MVCnExx9B0kOd4VfvSAMYlh0lO07wixTQvW-&_nc_ohc=oq0MEPWW2eYQ7kNvwE5qtxu&_nc_oc=Adqec0sfJMB5AMCXNkD7wHlV4bbfI3M3elpWVthvabPZaw0Px-EYb1aDxtgkNyQUrDTxEdqedsQtHkOj6phHMc3K&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_ss=7b2a8&oh=03_Q7cD6QGQH1muU7oXHce_EQ14u3flBebtFiXrQqFLieQjU-y1xg&oe=6AC31E04"
+                  class="d-block w-100"
+                  alt="Gallery Image 2"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="https://scontent.fcgy1-3.fna.fbcdn.net/v/t1.15752-9/792146038_1707257660385078_6802085038977473648_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFOcYoxtcLiAYtSJxOyMyWPlbXxKS7lIF-VtfEpLuUgX2ZthcGth6BsURJqbuEYZ9huZf2iLvXcZzugNvr0BaLi&_nc_ohc=Ksh6c9HxMwcQ7kNvwEoCKn7&_nc_oc=AdoJ-Sql9wBNAgHmq_i4JJ5bgAsrzwwgP258yp0rmggjbWWbnUbCL322LAWsGIc3mD9qUkLqFjXpDJRakIpecXDh&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_ss=7b2a8&oh=03_Q7cD6QH_6ZS6EgIinVr0GBWd-H17kcjavenJB5E0H5f6qqp7tw&oe=6AC2F4BA"
+                  class="d-block w-100"
+                  alt="Gallery Image 3"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.15752-9/795581020_1894725371489336_2622194806067132039_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGj0_ZOydRjLohdpmm7FRk_MggNYskfc7YyCA1iyR9ztk3gZOemRB3G1IKzYvrzaPabzJ2rTU5USzmnoLjMzElG&_nc_ohc=4i7IuSfyn5cQ7kNvwFQqc0v&_nc_oc=AdqQf5GDMdud8aXfFRj2C5Vx_U2iWBofxUoDym7wNBOSgNhwOv7h7A-WDiYMQsJgDSOjQ37iMyIagxZZWQvmI40m&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_ss=7b2a8&oh=03_Q7cD6QGENBW3yQCk5fC9MPb46V5yPz-uiR4wQHEFHnE5haT18w&oe=6AC30661"
+                  class="d-block w-100"
+                  alt="Gallery Image 4"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t1.15752-9/794292832_1049108174555862_5379881303414101608_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF0hTru99Mp63Ko6hEuDba-oiD5a6wEsAiiIPlrrASwCE6h3QrBwVAX1QdgeEobTINzT9HFz-_Of-RIPjFtRVMm&_nc_ohc=B0nAQGGnieUQ7kNvwH6yocb&_nc_oc=Ado2sNZJjdpfMla49cGx-2EmVkWK0mjp2CrJHGhs2cOcnWNO-5wd2KdPQa7F3PUp3g6liWCJE6gBz2HLQxTsvjX1&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_ss=7b2a8&oh=03_Q7cD6QGXOnyhgEtFplhOzk4pMmueTPA0o90qdqlD6GHkv6dBVg&oe=6AC32091"
+                  class="d-block w-100"
+                  alt="Gallery Image 5"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="https://scontent.fcgy1-3.fna.fbcdn.net/v/t1.15752-9/774190937_1361759552746123_7800605978990131311_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHRiIE0mmmV7vohlH3xpuCNOg3TaXzlhOA6DdNpfOWE4NCSsj0pUvXkEvsZPjjhJju-j90fSW-j8MxM43cjTzjr&_nc_ohc=9s11J16QfJkQ7kNvwGbUgMV&_nc_oc=AdrnLUz7SkJVpQekSbxxGA4YWoaTb7mJtzPYtyWjxVL2YAJvvcsI_orZEcIJK-TWB710lufg02NYasq4Qx_z6oSZ&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_ss=7b2a8&oh=03_Q7cD6QFHqbta3Qs26YyilSzZfgnl6DhBgogHrIr8iq_J8DGhxA&oe=6AC2FE20"
+                  class="d-block w-100"
+                  alt="Gallery Image 6"
+                />
+              </div>
+            </div>
+
+            <!-- Previous Button -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#portfolioCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+
+              <span class="visually-hidden"> Previous </span>
+            </button>
+
+            <!-- Next Button -->
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#portfolioCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+
+              <span class="visually-hidden"> Next </span>
+            </button>
+          </div>
+
+          <!-- Gallery Modal Button -->
+          <div class="text-center mt-4">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+            >
+              <i class="bi bi-eye-fill"></i>
+              View Gallery Information
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--  GALLERY MODAL  -->
+
+      <div
+        class="modal fade"
+        id="galleryModal"
+        tabindex="-1"
+        aria-labelledby="galleryModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="galleryModalLabel">My Gallery</h5>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              These six images represent some of my favorite moments, interests,
+              and experiences.
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  MISSION / VISION  -->
+
+      <section id="mission">
+        <div class="container">
+          <h2 class="section-title">Mission & Vision</h2>
+
+          <p class="section-description">
+            The mission and vision of Pamantasan ng Cabuyao (PNC).
+          </p>
+
+          <!-- Bootstrap Accordion -->
+          <div class="accordion" id="missionAccordion">
+            <!-- Mission -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#missionContent"
+                  aria-expanded="true"
+                >
+                  <i class="bi bi-bullseye me-2"></i>
+                  PNC Mission
+                </button>
+              </h2>
+
+              <div
+                id="missionContent"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#missionAccordion"
+              >
+                <div class="accordion-body">
+                  As an institution of higher learning, University of Cabuyao is
+                  committed to equip individuals with knowledge, skills and
+                  values that will enable them to achieve their professional
+                  goals and provide leadership and service for national
+                  development.
+                </div>
+              </div>
+            </div>
+
+            <!-- Vision -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#visionContent"
+                >
+                  <i class="bi bi-eye-fill me-2"></i>
+                  PNC Vision
+                </button>
+              </h2>
+
+              <div
+                id="visionContent"
+                class="accordion-collapse collapse"
+                data-bs-parent="#missionAccordion"
+              >
+                <div class="accordion-body">
+                  A premier institution of higher learning in Region IV,
+                  developing globally-competitive and value-laden professionals
+                  and leaders instrumental to community development and
+                  nation-building
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progress Bars -->
+          <div class="mt-5">
+            <h4 class="mb-4 text-primary">My Skills & Goals</h4>
+
+            <div class="mb-3">
+              <div class="skill-label">
+                <span>HTML & CSS</span>
+                <span>90%</span>
+              </div>
+
+              <div class="progress">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 90%"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  90%
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="skill-label">
+                <span>Bootstrap</span>
+                <span>85%</span>
+              </div>
+
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 85%"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  85%
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="skill-label">
+                <span>JavaScript</span>
+                <span>75%</span>
+              </div>
+
+              <div class="progress">
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 75%"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  75%
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="skill-label">
+                <span>Web Development Goal</span>
+                <span>80%</span>
+              </div>
+
+              <div class="progress">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  80%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  CONTACT   -->
+
+      <section id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact Me</h2>
+
+          <p class="section-description">
+            Have a question or want to work with me? Send me a message.
+          </p>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <form>
+              <!-- Name -->
+              <div class="mb-3">
+                <label for="name" class="form-label fw-bold"> Name </label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold"> Email </label>
+
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+
+              <!-- Subject -->
+              <div class="mb-3">
+                <label for="subject" class="form-label fw-bold">
+                  Subject
+                </label>
+
+                <select class="form-select" id="subject">
+                  <option selected>Choose a subject</option>
+
+                  <option>General Inquiry</option>
+
+                  <option>Project Collaboration</option>
+
+                  <option>Feedback</option>
+                </select>
+              </div>
+
+              <!-- Message -->
+              <div class="mb-3">
+                <label for="message" class="form-label fw-bold">
+                  Message
+                </label>
+
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="6"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Checkbox -->
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="agree"
+                  required
+                />
+
+                <label class="form-check-label" for="agree">
+                  I agree to be contacted regarding my message.
+                </label>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="btn btn-primary btn-lg">
+                <i class="bi bi-send-fill"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--  FOOTER  -->
+
+      <footer>
+        <div class="container">
+          <h4>Connect With Me</h4>
+
+          <!-- SOCIAL MEDIA IS HERE -->
+          <div class="social-links">
+            <a href="https://www.facebook.com/UnknownSolitude#" target="_blank">
+              <i class="bi bi-facebook"></i>
+              Facebook
+            </a>
+
+            <a href="https://www.instagram.com/dmml121/" target="_blank">
+              <i class="bi bi-instagram"></i>
+              Instagram
+            </a>
+
+            <a href="https://github.com/repos" target="_blank">
+              <i class="bi bi-github"></i>
+              GitHub
+            </a>
+          </div>
+
+          <p class="copyright mb-0">
+            © 2026 My Portfolio
+            <br />
+            Created by: <strong>Daron Layog</strong>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
